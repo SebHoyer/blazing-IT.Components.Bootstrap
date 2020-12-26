@@ -1,0 +1,8 @@
+﻿<div class="btn-toolbar" role="toolbar" aria-label="Basic example">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter()]
+    public RenderFragment ChildContent { get; set; }
+}

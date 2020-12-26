@@ -1,0 +1,50 @@
+﻿<div class="dropdown">
+    <button class="@DropDownCssClass" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" disabled="@Disabled">
+        @Label
+    </button>
+    <ul class="@DropDownMenuCssClass" aria-labelledby="dropdownMenuButton">
+        @Items
+    </ul>
+</div>
+
+@code {
+
+    private string DropDownCssClass
+    {
+        get
+        {
+            string style = $"{CssClassAttribute.GetCssClass(Style)}";
+            string size = $"{CssClassAttribute.GetCssClass(Size)}";
+            //string rotate = $"{CssClassAttribute.GetCssClass(Rotate)}";
+            //string spin = $"{(Spin ? "fa-spin" : string.Empty)}";
+            //string swapOpacity = $"{(SwapOpacity ? "fa-swap-opacity" : string.Empty)}";
+
+            return $"btn {style} {size} dropdown-toggle".Trim().Replace("  ", " ");
+        }
+    }
+
+    private string DropDownMenuCssClass
+    {
+        get
+        {
+            return $"dropdown-menu".Trim().Replace("  ", " "); ;
+        }
+    }
+
+    [Parameter()]
+    public Buttons.ButtonSize Size { get; set; }
+
+    [Parameter()]
+    public Buttons.ButtonStyle Style { get; set; }
+
+    [Parameter()]
+    public bool Disabled { get; set; } = false;
+
+    [Parameter()]
+    public RenderFragment Label { get; set; }
+
+    [Parameter()]
+    public RenderFragment Items { get; set; }
+
+
+}

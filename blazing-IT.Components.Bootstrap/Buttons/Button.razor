@@ -1,0 +1,26 @@
+﻿<button class="@CssClass" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+</button>
+
+@code {
+
+    private string CssClass
+    {
+        get
+        {
+            //string style = $"{CssClassAttribute.GetCssClass(Style)}";
+            //string fixedWidth = $"{(FixedWidth ? "fa-fw" : string.Empty)}";
+            //string name = $"{CssClassAttribute.GetCssClass(Name)}";
+            string size = $"{CssClassAttribute.GetCssClass(Size)}";
+            //string rotate = $"{CssClassAttribute.GetCssClass(Rotate)}";
+            //string spin = $"{(Spin ? "fa-spin" : string.Empty)}";
+            //string swapOpacity = $"{(SwapOpacity ? "fa-swap-opacity" : string.Empty)}";
+
+            return $"btn btn-secondary dropdown-toggle".Trim().Replace("  ", " ");
+        }
+    }
+
+    [Parameter()]
+    public ButtonSize Size { get; set; }
+
+}

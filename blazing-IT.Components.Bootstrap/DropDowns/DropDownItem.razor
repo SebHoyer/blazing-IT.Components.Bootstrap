@@ -1,0 +1,18 @@
+﻿
+<li><a class="dropdown-item" href="@Link"><FaIcon Style="@IconStyle" Name="@IconName" /> @Label</a></li>
+
+@code {
+
+    [Parameter()]
+    public string Link { get; set; }
+
+    [Parameter()]
+    public FaIconStyle IconStyle { get; set; } = FaIconStyle.DuoTone;
+
+    [Parameter()]
+    public FaIconName IconName { get; set; }
+
+    [Parameter()]
+    public string Label { get; set; }
+
+}
