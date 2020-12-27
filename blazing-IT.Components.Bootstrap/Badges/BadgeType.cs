@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenGrow.Application.Components.Bootstrap.Badges
+namespace blazing_IT.Components.Bootstrap.Badges
 {
     public enum BadgeType
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenGrow.Application.Components.Bootstrap.Buttons
+namespace blazing_IT.Components.Bootstrap.Buttons
 {
     public enum ButtonStyle
     {

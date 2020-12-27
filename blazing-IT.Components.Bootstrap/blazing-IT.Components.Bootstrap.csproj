@@ -1,18 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>blazing-IT.Components.Bootstrap</PackageId>
     <RootNamespace>blazing_IT.Components.Bootstrap</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Sebastian Hoyer</Authors>
+    <Company>blazing-IT</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.css" />
-  </ItemGroup>
-
   
   <ItemGroup>
     <SupportedPlatform Include="browser" />
