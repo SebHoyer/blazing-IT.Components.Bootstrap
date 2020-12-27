@@ -7,19 +7,11 @@
     <Authors>Sebastian Hoyer</Authors>
     <Company>blazing-IT</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.0.1</Version>
+    <Version>0.1.0.2</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Remove="compilerconfig.json" />
-  </ItemGroup>
   
   <ItemGroup>
     <SupportedPlatform Include="browser" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="blazing-IT.Components" Version="0.1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="compilerconfig.json" />
+    <PackageReference Include="blazing-IT.Components" Version="1.0.0.3" />
   </ItemGroup>
-
+  
 </Project>
